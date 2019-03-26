@@ -1,0 +1,41 @@
+body {
+  background: darkslategrey url("../img/background.png") no-repeat fixed center;
+  background-size: 70pc;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-family: Impact;
+  font-size: 40px;
+  background-color: black;
+  border: 2px solid white;
+}
+
+p, script, button {
+  font-family: Impact;
+  font-family: Helvetica, Times;
+  font-size: 20px;
+}
+
+button {
+  color: black;
+  margin: 1pc;
+}
+
+#quote {
+  font-family: Impact;
+  font-size: 50px;
+  height: 100px;
+}
+
+.footer {
+position: absolute;
+bottom: 0;
+width: 99%;
+height: 2em;
+color: rgb(255,255,255,50);
+border-top: dotted;
+color: lightgrey;
+}
+

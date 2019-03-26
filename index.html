@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="src/js/printQuote.js">
+        </script>
+        <link rel="stylesheet" href="src/css/index.css">
+    </head>
+<html>
+<body>
+
+<h1>Warhammer 40k quote generator</h1>
+<p>Click below for a random Warhammer 40k quote of the day</p>
+
+<div id="quote">
+    <br>
+    <script>
+        document.getElementById("quote").innerHTML =selectQuote()
+    </script>
+    <br>
+</div>
+
+<button type="button" onclick="document.getElementById('quote').innerHTML=selectQuote();">Praise the Emperor!</button>
+<div class="footer">
+    This website is made by Mark @ 2019
+<div>
+</body>
+</html>
