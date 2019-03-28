@@ -4,6 +4,7 @@
         <script type="text/javascript" src="src/js/printQuote.js">
         </script>
         <link rel="stylesheet" href="src/css/index.css">
+        <title>THE EMPEROR PROTECTS!</title>
     </head>
 <html>
 <body>
@@ -11,15 +12,19 @@
 <h1>Warhammer 40k quote generator</h1>
 <p>Click below for a random Warhammer 40k quote of the day</p>
 
-<div id="quote">
-    <br>
-    <script>
-        document.getElementById("quote").innerHTML =selectQuote()
-    </script>
-    <br>
+<div id="button">
+  <button type="button" onclick="playVid()">Praise the Emperor!</button>
 </div>
 
-<button type="button" onclick="document.getElementById('quote').innerHTML=selectQuote();">Praise the Emperor!</button>
+<div id="video" align="center" >
+  <video id="vid1" src="src/img/vid1.mp4" style="display: none" onended="showHide()">
+  Your browser does not support the video tag.
+  </video>
+</div>
+
+<div id="quote" align="center" style="display: none">
+</div>
+
 <div class="footer">
     This website is made by Mark @ 2019
 <div>
