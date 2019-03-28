@@ -52,17 +52,16 @@ function selectQuote() {
     return qArray[Math.floor(Math.random() * qArray.length)];
 }
 
-function removeVid(e) {
-      var element = document.getElementById("exVid");
-      //console.log('ended')
-      element.parentNode.removeChild(element);
-      }
-
-function showHide(divId) {
-  var x = document.getElementById(divId);
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+function playVid(){
+    document.getElementById("quote").style.display="none";
+    document.getElementById("video").style.display="block";
+    var video = document.getElementById("vid1");
+    video.style.display="block";
+    video.play();
 }
+
+function showHide(){
+    document.getElementById("video").style.display="none";
+    document.getElementById("quote").style.display="block";
+    document.getElementById("quote").innerHTML=selectQuote()
+  }
